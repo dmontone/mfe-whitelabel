@@ -1,12 +1,38 @@
 {
-  "name": "@mfe/design-system",
+  "name": "@dmontone/design-system",
   "version": "1.0.0",
   "description": "Design System compartilhado para MFE Whitelabel",
   "main": "dist/index.js",
+  "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "tokens.json",
+    "README.md"
+  ],
   "scripts": {
-    "build": "tsc",
-    "dev": "tsc --watch"
+    "build": "tsc && tsc --module es6 --outDir dist/esm --declaration false",
+    "dev": "tsc --watch",
+    "clean": "rmdir /s /q dist 2>nul || echo 'dist folder not found'",
+    "prepublishOnly": "npm run clean && npm run build",
+    "publish:beta": "npm publish --tag beta",
+    "publish:latest": "npm publish --tag latest",
+    "version:patch": "node scripts/version-bump.js patch latest",
+    "version:minor": "node scripts/version-bump.js minor latest",
+    "version:major": "node scripts/version-bump.js major latest",
+    "version:beta": "node scripts/version-bump.js patch beta",
+    "version:custom": "node scripts/version-bump.js",
+    "release:patch": "npm version patch && npm publish",
+    "release:minor": "npm version minor && npm publish",
+    "release:major": "npm version major && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/org/mfe-whitelabel.git",
+    "directory": "packages/design-system"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "dependencies": {
     "react": "^18",
@@ -20,5 +46,9 @@
   "peerDependencies": {
     "react": "^18",
     "react-dom": "^18"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
   }
 }
