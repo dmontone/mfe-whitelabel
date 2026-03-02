@@ -125,21 +125,7 @@ const tenantThemes = {
 }
 ```
 
-## 🚀 Comandos
-
-### Desenvolvimento
-```bash
-pnpm install    # Instalar dependências
-pnpm dev        # Iniciar aplicação shell
-```
-
-### Build e Produção
-```bash
-pnpm build      # Build da aplicação
-pnpm start      # Iniciar produção
-```
-
-## 📦 Tecnologias
+## Tecnologias
 - **Gerenciador de pacotes**: pnpm com workspaces
 - **Runtime**: Node.js
 - **Framework**: Next.js 14
