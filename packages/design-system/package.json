@@ -1,6 +1,6 @@
 {
   "name": "@dmontone/design-system",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Design System compartilhado para MFE Whitelabel",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
