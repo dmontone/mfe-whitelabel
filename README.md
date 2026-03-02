@@ -1,8 +1,10 @@
 # MFE Whitelabel
 
-Monorepo com arquitetura de Micro Frontends (MFE) para soluções whitelabel.
+Monorepo com arquitetura de Micro Frontends (MFE) para soluções whitelabel, com uso de Design System para consistência visual.
 
 ## Visão Arquitetural
+
+
 
 ### Estrutura do Monorepo
 

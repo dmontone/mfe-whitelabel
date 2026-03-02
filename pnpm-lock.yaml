@@ -18,7 +18,7 @@ importers:
   apps/payments-mf:
     dependencies:
       '@dmontone/design-system':
-        specifier: ^1.0.1
+        specifier: ^1.1.0
         version: link:../../packages/design-system
       next:
         specifier: 14.1.0
@@ -52,7 +52,7 @@ importers:
   apps/shell:
     dependencies:
       '@dmontone/design-system':
-        specifier: ^1.0.1
+        specifier: ^1.1.0
         version: link:../../packages/design-system
       next:
         specifier: 14.1.0

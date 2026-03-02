@@ -7,9 +7,9 @@
     "packages/*"
   ],
   "scripts": {
-    "dev": "pnpm --filter shell dev",
-    "build": "pnpm --filter shell build",
-    "start": "pnpm --filter shell start"
+    "dev": "pnpm -r dev",
+    "build": "pnpm -r build",
+    "start": "pnpm -r start"
   },
   "devDependencies": {
     "@types/node": "^20",

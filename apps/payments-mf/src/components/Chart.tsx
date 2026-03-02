@@ -40,10 +40,7 @@ const chartStates = [
 
 export function Chart() {
   const [chartState, setChartState] = useState<ChartState>({ status: 'loading' })
-
-  const handleStateChange = (newState: ChartState) => {
-    setChartState(newState)
-  }
+  const handleStateChange = (newState: ChartState) => setChartState(newState)
 
   return (
     <div style={{ marginTop: '2rem' }}>

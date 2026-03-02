@@ -13,7 +13,7 @@
   "dependencies": {
     "react": "^18",
     "react-dom": "^18",
-    "@dmontone/design-system": "^1.0.1",
+    "@dmontone/design-system": "^1.1.0",
     "next": "14.1.0"
   },
   "devDependencies": {
