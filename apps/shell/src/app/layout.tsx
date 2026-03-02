@@ -1,5 +1,6 @@
 import { headers } from 'next/headers'
 import { getTenantTheme } from '@/lib/tenant'
+import { Layout } from '@/components/Layout'
 
 const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const headersList = headers()
@@ -15,14 +16,27 @@ const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
             :root {
               --color-primary: ${theme.primaryColor};
               --logo-path: '${theme.logoPath}';
-              --spacing-md: 1rem;
-              --radius-md: 8px;
+            }
+            
+            * {
+              box-sizing: border-box;
+            }
+            
+            body {
+              margin: 0;
+              padding: 0;
+              font-family: system-ui, -apple-system, sans-serif;
             }
           `,
           }}
         />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
-      <body>{children}</body>
+      <body>
+        <Layout tenant={tenantId}>
+          {children}
+        </Layout>
+      </body>
     </html>
   )
 }
