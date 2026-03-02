@@ -25,3 +25,17 @@ export function getTenantFromRequest(request: Request | URL): string {
   const url = request instanceof URL ? request : new URL(request.url)
   return url.searchParams.get('tenant') || 'a'
 }
+
+export function getTenantFromClient(): string {
+  // Tenta pegar do cookie no cliente
+  if (typeof document !== 'undefined') {
+    const cookies = document.cookie.split(';')
+    const tenantCookie = cookies.find(cookie => 
+      cookie.trim().startsWith('tenant=')
+    )
+    if (tenantCookie) {
+      return tenantCookie.split('=')[1] || 'a'
+    }
+  }
+  return 'a'
+}

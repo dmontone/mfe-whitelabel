@@ -1,6 +1,12 @@
 import { Button } from '@mfe/design-system'
+import { PaymentsApp } from 'payments-mf'
+import { headers } from 'next/headers'
 
 export default function Home() {
+  // Pega o tenant do header setado pelo middleware no servidor
+  const headersList = headers()
+  const tenant = headersList.get('x-tenant') || 'a'
+
   return (
     <main
       style={{
@@ -30,6 +36,8 @@ export default function Home() {
       >
         <p>Elemento estilizado com CSS Variable do tenant</p>
       </div>
+
+      <PaymentsApp tenant={tenant} />
     </main>
   )
 }
