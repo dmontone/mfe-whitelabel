@@ -17,6 +17,12 @@ importers:
 
   apps/payments-mf:
     dependencies:
+      '@dmontone/design-system':
+        specifier: ^1.0.1
+        version: link:../../packages/design-system
+      next:
+        specifier: 14.1.0
+        version: 14.1.0(react-dom@18.3.1)(react@18.3.1)
       react:
         specifier: ^18
         version: 18.3.1
@@ -45,14 +51,14 @@ importers:
 
   apps/shell:
     dependencies:
-      '@mfe/design-system':
-        specifier: workspace:*
+      '@dmontone/design-system':
+        specifier: ^1.0.1
         version: link:../../packages/design-system
       next:
         specifier: 14.1.0
         version: 14.1.0(react-dom@18.3.1)(react@18.3.1)
       payments-mf:
-        specifier: workspace:*
+        specifier: ^1.0.0
         version: link:../payments-mf
       react:
         specifier: ^18

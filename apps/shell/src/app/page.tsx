@@ -1,4 +1,4 @@
-import { Button } from '@mfe/design-system'
+import { Button } from '@dmontone/design-system'
 import { PaymentsApp } from 'payments-mf'
 import { headers } from 'next/headers'
 import { ChartDemo } from '../components/ChartDemo'

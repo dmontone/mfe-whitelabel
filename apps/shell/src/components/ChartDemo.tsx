@@ -1,6 +1,6 @@
 'use client'
 
-import { BarChart, ChartState } from '@mfe/design-system'
+import { BarChart, ChartState } from '@dmontone/design-system'
 import { useState, useEffect } from 'react'
 
 // Mock data para demonstração

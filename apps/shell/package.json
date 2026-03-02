@@ -12,8 +12,8 @@
     "next": "14.1.0",
     "react": "^18",
     "react-dom": "^18",
-    "@mfe/design-system": "workspace:*",
-    "payments-mf": "workspace:*"
+    "@dmontone/design-system": "^1.0.1",
+    "payments-mf": "^1.0.0"
   },
   "devDependencies": {
     "@types/node": "^20",

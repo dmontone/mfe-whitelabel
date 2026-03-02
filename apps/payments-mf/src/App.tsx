@@ -1,3 +1,5 @@
+import { Button } from '@dmontone/design-system'
+
 export interface PaymentsProps {
   tenant: string
 }
@@ -24,30 +26,12 @@ export function PaymentsApp({ tenant }: PaymentsProps) {
       </p>
       
       <div style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
-        <button
-          style={{
-            padding: '0.5rem 1rem',
-            backgroundColor: 'var(--color-primary)',
-            color: 'white',
-            border: 'none',
-            borderRadius: '4px',
-            cursor: 'pointer'
-          }}
-        >
+        <Button variant="primary">
           Processar Pagamento
-        </button>
-        <button
-          style={{
-            padding: '0.5rem 1rem',
-            backgroundColor: 'transparent',
-            color: 'var(--color-primary)',
-            border: '2px solid var(--color-primary)',
-            borderRadius: '4px',
-            cursor: 'pointer'
-          }}
-        >
+        </Button>
+        <Button variant="secondary">
           Ver Histórico
-        </button>
+        </Button>
       </div>
       
       <div style={{ marginTop: '1.5rem' }}>
