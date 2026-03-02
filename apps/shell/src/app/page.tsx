@@ -1,6 +1,7 @@
 import { Button } from '@mfe/design-system'
 import { PaymentsApp } from 'payments-mf'
 import { headers } from 'next/headers'
+import { ChartDemo } from '../components/ChartDemo'
 
 export default function Home() {
   // Pega o tenant do header setado pelo middleware no servidor
@@ -38,6 +39,8 @@ export default function Home() {
       </div>
 
       <PaymentsApp tenant={tenant} />
+      
+      <ChartDemo />
     </main>
   )
 }
