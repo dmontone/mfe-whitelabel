@@ -72,7 +72,7 @@ graph LR
 └── pnpm-workspace.yaml # Configuração do workspace
 ```
 
-> Usei pnpm workspaces pela simplicidade - permite gerenciar múltiplos pacotes em um único comando (`pnpm install`, `pnpm build`) sem configuração complexa. É mais leve que npm workspaces e mais direto que ferramentas como Lerna ou Nx para esta proposta.
+> Usei pnpm workspaces pela simplicidade: permite gerenciar múltiplos pacotes em um único comando (`pnpm install`, `pnpm build`) sem configuração complexa. É mais leve que npm workspaces e mais direto que ferramentas como Lerna ou Nx para esta proposta.
 
 ### Aplicações
 #### Shell (apps/shell)
