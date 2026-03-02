@@ -1,0 +1,19 @@
+{
+  "name": "mfe-whitelabel",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "pnpm --filter shell dev",
+    "build": "pnpm --filter shell build",
+    "start": "pnpm --filter shell start"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "typescript": "^5"
+  },
+  "packageManager": "pnpm@8.15.0"
+}
